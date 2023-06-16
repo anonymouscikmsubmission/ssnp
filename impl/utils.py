@@ -54,6 +54,7 @@ def MaxZOZ(x, pos):
     z[tpos] = 1
     return z
 
+
 def draw_graph(graph):
     # helps draw a graph object and save it as a png file
     f = plt.figure(1, figsize=(48, 48))
@@ -75,7 +76,7 @@ def neighbors(fringe, A, outgoing=True):
 
     return res
 
-
+# k-hop subgraph extraction copied from ScaLed
 def k_hop_subgraph(center, num_hops, A, sample_ratio=1.0,
                    max_nodes_per_hop=None, node_features=None,
                    y=1, directed=False, A_csc=None, rw_kwargs=None):
